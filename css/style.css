@@ -1,0 +1,50 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #000;
+    color: #fff;
+    padding-bottom: 80px; /* Space for bottom nav */
+}
+
+/* Bottom Navigation Bar */
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #121212;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid #1f1f1f;
+}
+
+.nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #b3b3b3;
+    font-size: 12px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.nav-item i {
+    font-size: 22px;
+    margin-bottom: 3px;
+}
+
+/* Active State */
+.nav-item.active {
+    color: #1DB954;
+}
+
+.nav-item:hover {
+    color: #fff;
+}
